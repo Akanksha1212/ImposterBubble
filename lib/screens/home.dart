@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:imposterbubble/quiz/screens/home_screen.dart';
 import 'package:imposterbubble/screens/affirmations.dart';
+import 'package:imposterbubble/screens/resources.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -56,7 +57,7 @@ class _HomeState extends State<Home> {
                     children: [
                       Container(
                         height: 50,
-                        width: 130,
+                        width: 190,
                         child: ElevatedButton(
                           style: ButtonStyle(
                             backgroundColor:
@@ -147,7 +148,7 @@ class _HomeState extends State<Home> {
                     children: [
                       Container(
                         height: 50,
-                        width: 130,
+                        width: 190,
                         child: ElevatedButton(
                           style: ButtonStyle(
                             backgroundColor:
@@ -164,7 +165,7 @@ class _HomeState extends State<Home> {
                             ),
                           ),
                           child: Text(
-                            'About',
+                            'Resources',
                             style: GoogleFonts.comfortaa(
                                 color: Colors.black,
                                 fontSize: 20,
@@ -174,11 +175,64 @@ class _HomeState extends State<Home> {
 
                                 ),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Resources()));
+                          },
                         ),
                       ),
                     ],
                   ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Container(
+                      height: 50,
+                      width: 190,
+                      child: ElevatedButton(
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all(Colors.white),
+                          shape:
+                              MaterialStateProperty.all<RoundedRectangleBorder>(
+                            RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8.0),
+                              side: BorderSide(
+                                color: Colors.black,
+                                width: 1.0,
+                              ),
+                            ),
+                          ),
+                        ),
+                        child: Text(
+                          'About',
+                          style: GoogleFonts.comfortaa(
+                              color: Colors.black,
+                              fontSize: 20,
+                              fontWeight: FontWeight.w600,
+                              letterSpacing: 0
+                              // fontStyle: FontStyle.italic,
+
+                              ),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Affirmations()));
+                        },
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 20,
                 ),
                 Image.asset(
                   "assets/tp.gif",

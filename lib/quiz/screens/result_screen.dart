@@ -29,7 +29,7 @@ class ResultScreen extends StatelessWidget {
               builder: (context, constraints) {
                 return Container(
                   width: constraints.maxWidth * 0.85,
-                  height: constraints.maxHeight * 0.8,
+                  height: constraints.maxHeight * 0.9,
                   child: Card(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -67,7 +67,7 @@ class ResultScreen extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.all(14.0),
                           child: Text(
-                            "For this type, success is rarely satisfying because they believe they could’ve done even better. But that’s neither productive nor healthy. Owning and celebrating achievements is essential if you want to avoid burnout, find contentment, and cultivate self-confidence.Learn to take your mistakes in stride, viewing them as a natural part of the process. In addition, push yourself to act before you’re ready. Force yourself to start the project you’ve been planning for months. Truth is, there will never be the “perfect time” and your work will never be 100% flawless. The sooner you’re able to accept that, the better off you’ll be.",
+                            "For this type, success is rarely satisfying because they believe they could’ve done even better. But that’s neither productive nor healthy. Owning and celebrating achievements is essential if you want to avoid burnout, find contentment, and cultivate self-confidence.\n\nLearn to take your mistakes in stride, viewing them as a natural part of the process. In addition, push yourself to act before you’re ready. Force yourself to start the project you’ve been planning for months. Truth is, there will never be the “perfect time” and your work will never be 100% flawless. The sooner you’re able to accept that, the better off you’ll be.",
                             style: GoogleFonts.montserrat(
                                 color: Colors.black,
                                 fontSize: 14,
@@ -85,7 +85,7 @@ class ResultScreen extends StatelessWidget {
                             padding: const EdgeInsets.all(10.0),
                             child: Container(
                               height: 50,
-                              width: 190,
+                              width: 200,
                               child: ElevatedButton(
                                 style: ButtonStyle(
                                   backgroundColor:

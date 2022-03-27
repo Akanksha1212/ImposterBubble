@@ -84,7 +84,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
                           height: 50,
-                          width: 170,
+                          width: 190,
                           child: ElevatedButton(
                             style: ButtonStyle(
                               backgroundColor:
