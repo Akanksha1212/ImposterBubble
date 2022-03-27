@@ -196,38 +196,79 @@ class _HomeState extends State<Home> {
                       height: 50,
                       width: 190,
                       child: ElevatedButton(
-                        style: ButtonStyle(
-                          backgroundColor:
-                              MaterialStateProperty.all(Colors.white),
-                          shape:
-                              MaterialStateProperty.all<RoundedRectangleBorder>(
-                            RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(8.0),
-                              side: BorderSide(
-                                color: Colors.black,
-                                width: 1.0,
+                          style: ButtonStyle(
+                            backgroundColor:
+                                MaterialStateProperty.all(Colors.white),
+                            shape: MaterialStateProperty.all<
+                                RoundedRectangleBorder>(
+                              RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8.0),
+                                side: BorderSide(
+                                  color: Colors.black,
+                                  width: 1.0,
+                                ),
                               ),
                             ),
                           ),
-                        ),
-                        child: Text(
-                          'About',
-                          style: GoogleFonts.comfortaa(
-                              color: Colors.black,
-                              fontSize: 20,
-                              fontWeight: FontWeight.w600,
-                              letterSpacing: 0
-                              // fontStyle: FontStyle.italic,
+                          child: Text(
+                            'About',
+                            style: GoogleFonts.comfortaa(
+                                color: Colors.black,
+                                fontSize: 20,
+                                fontWeight: FontWeight.w600,
+                                letterSpacing: 0
+                                // fontStyle: FontStyle.italic,
 
-                              ),
-                        ),
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => Affirmations()));
-                        },
-                      ),
+                                ),
+                          ),
+                          onPressed: () {
+                            showDialog(
+                                context: context,
+                                builder: (BuildContext context) {
+                                  return AlertDialog(
+                                    title: Text(
+                                      "About Imposter Bubble",
+                                      style: GoogleFonts.comfortaa(
+                                          color: Colors.black,
+                                          fontSize: 19,
+                                          fontWeight: FontWeight.w600,
+                                          letterSpacing: 0
+                                          // fontStyle: FontStyle.italic,
+
+                                          ),
+                                    ),
+                                    content: Container(
+                                      height: 130,
+                                      child: Column(
+                                        children: [
+                                          Text(
+                                            "Imposter Bubble helps people combat imposter syndrome by providing them right resources and recommendations.\n",
+                                            style: GoogleFonts.comfortaa(
+                                                color: Colors.black,
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.w400,
+                                                letterSpacing: 0
+                                                // fontStyle: FontStyle.italic,
+
+                                                ),
+                                          ),
+                                          Text(
+                                            "Made with 💖 by Akanksha Singh",
+                                            style: GoogleFonts.comfortaa(
+                                                color: Colors.blue,
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.w600,
+                                                letterSpacing: 0
+                                                // fontStyle: FontStyle.italic,
+
+                                                ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  );
+                                });
+                          }),
                     ),
                   ],
                 ),

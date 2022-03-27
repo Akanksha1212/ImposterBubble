@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:imposterbubble/quiz/screens/home_screen.dart';
 import 'package:imposterbubble/screens/home.dart';
+import 'package:onesignal_flutter/onesignal_flutter.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -35,12 +36,22 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
+    initPlatformState();
+
     Future.delayed(
       Duration(seconds: 3),
       // () => Navigator.pushReplacementNamed(context, '/meditation'),
       // () => Navigator.pushReplacementNamed(context, '/bingo'),
       () => Navigator.pushReplacementNamed(context, '/home'),
     );
+  }
+
+  static final String oneSignalAppId = "a2d21346-95fd-4126-98fe-6baa23db8972";
+  Future<void> initPlatformState() async {
+    OneSignal.shared.setAppId(oneSignalAppId);
+    OneSignal.shared
+        .promptUserForPushNotificationPermission()
+        .then((accepted) {});
   }
 
   @override

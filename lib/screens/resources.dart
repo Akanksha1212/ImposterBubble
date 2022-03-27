@@ -14,7 +14,7 @@ class Resources extends StatefulWidget {
 class _ResourcesState extends State<Resources> {
   void _launchURL() async {
     if (!await launch(
-        "https://positivepsychology.com/imposter-syndrome-books/"))
+        "https://www.sciencetheearth.com/uploads/2/4/6/5/24658156/2011_sakulku_the_impostor_phenomenon.pdf"))
       throw 'Could not launch ';
   }
 
