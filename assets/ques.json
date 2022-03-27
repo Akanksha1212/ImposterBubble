@@ -1,0 +1,201 @@
+{
+    "name": "Satisfaction with Life Scale",
+    "instructions": "Please indicate your agreement or disagreement with the following statement. Please be open and honest in your responding.",
+    "questions": [
+        {
+            "text": "I sometimes think to myself I must have obtained my present position or gained my present success because I happened to be in the right place at the right time, and/or I knew the right people.",
+            "answers": [
+                {
+                    "text": "Strongly agree",
+                    "score": 7
+                },
+                {
+                    "text": "Agree",
+                    "score": 6
+                },
+                {
+                    "text": "Slightly agree",
+                    "score": 5
+                },
+                {
+                    "text": "Neither agree nor disagree",
+                    "score": 4
+                },
+                {
+                    "text": "Slightly disagree",
+                    "score": 3
+                },
+                {
+                    "text": "Disagree",
+                    "score": 2
+                },
+                {
+                    "text": "Strongly disagree",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "text": "I’m afraid that people who are important to me will find out that I’m not as capable as they think I am.",
+            "answers": [
+                {
+                    "text": "Strongly agree",
+                    "score": 7
+                },
+                {
+                    "text": "Agree",
+                    "score": 6
+                },
+                {
+                    "text": "Slightly agree",
+                    "score": 5
+                },
+                {
+                    "text": "Neither agree nor disagree",
+                    "score": 4
+                },
+                {
+                    "text": "Slightly disagree",
+                    "score": 3
+                },
+                {
+                    "text": "Disagree",
+                    "score": 2
+                },
+                {
+                    "text": "Strongly disagree",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "text": "If I’m going to receive a promotion or gain recognition of some kind, I hesitate to allow myself to believe in it until it is an accomplished fact.",
+            "answers": [
+                {
+                    "text": "Strongly agree",
+                    "score": 7
+                },
+                {
+                    "text": "Agree",
+                    "score": 6
+                },
+                {
+                    "text": "Slightly agree",
+                    "score": 5
+                },
+                {
+                    "text": "Neither agree nor disagree",
+                    "score": 4
+                },
+                {
+                    "text": "Slightly disagree",
+                    "score": 3
+                },
+                {
+                    "text": "Disagree",
+                    "score": 2
+                },
+                {
+                    "text": "Strongly disagree",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "text": "So far I have gotten the important things I want in life.",
+            "answers": [
+                {
+                    "text": "Strongly agree",
+                    "score": 7
+                },
+                {
+                    "text": "Agree",
+                    "score": 6
+                },
+                {
+                    "text": "Slightly agree",
+                    "score": 5
+                },
+                {
+                    "text": "Neither agree nor disagree",
+                    "score": 4
+                },
+                {
+                    "text": "Slightly disagree",
+                    "score": 3
+                },
+                {
+                    "text": "Disagree",
+                    "score": 2
+                },
+                {
+                    "text": "Strongly disagree",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "text": "I often compare my ability with that of those around me and think they may be more intelligent, or somehow more deserving, than I am.",
+            "answers": [
+                {
+                    "text": "Strongly agree",
+                    "score": 7
+                },
+                {
+                    "text": "Agree",
+                    "score": 6
+                },
+                {
+                    "text": "Slightly agree",
+                    "score": 5
+                },
+                {
+                    "text": "Neither agree nor disagree",
+                    "score": 4
+                },
+                {
+                    "text": "Slightly disagree",
+                    "score": 3
+                },
+                {
+                    "text": "Disagree",
+                    "score": 2
+                },
+                {
+                    "text": "Strongly disagree",
+                    "score": 1
+                }
+            ]
+        }
+    ],
+    "interpretations": [
+        {
+            "score": 31,
+            "text": "Perfectionist"
+        },
+        {
+            "score": 26,
+            "text": "The Superwoman/man"
+        },
+        {
+            "score": 21,
+            "text": "The Rugged Individualist"
+        },
+        {
+            "score": 20,
+            "text": "Neutral"
+        },
+        {
+            "score": 15,
+            "text": "The Expert"
+        },
+        {
+            "score": 10,
+            "text": "Dissatisfied"
+        },
+        {
+            "score": 5,
+            "text": "Extremely dissatisfied"
+        }
+    ]
+}
