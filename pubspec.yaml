@@ -39,6 +39,10 @@ dependencies:
   dots_indicator: ^2.1.0
   avatar_glow: ^2.0.2
   speech_to_text: ^5.4.3
+  youtube_player_flutter: ^8.0.0
+  advance_pdf_viewer: ^2.0.1
+  url_launcher: ^6.0.20
+  onesignal_flutter: ^3.3.0
  
 
 dev_dependencies:

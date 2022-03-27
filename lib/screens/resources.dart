@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:imposterbubble/screens/read.dart';
+import 'package:imposterbubble/screens/videos.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Resources extends StatefulWidget {
   const Resources({Key? key}) : super(key: key);
@@ -9,6 +12,12 @@ class Resources extends StatefulWidget {
 }
 
 class _ResourcesState extends State<Resources> {
+  void _launchURL() async {
+    if (!await launch(
+        "https://positivepsychology.com/imposter-syndrome-books/"))
+      throw 'Could not launch ';
+  }
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -68,7 +77,12 @@ class _ResourcesState extends State<Resources> {
 
                               ),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Videos()));
+                        },
                       ),
                     ),
                   ],
@@ -83,33 +97,32 @@ class _ResourcesState extends State<Resources> {
                       height: 50,
                       width: 210,
                       child: ElevatedButton(
-                        style: ButtonStyle(
-                          backgroundColor:
-                              MaterialStateProperty.all(Colors.white),
-                          shape:
-                              MaterialStateProperty.all<RoundedRectangleBorder>(
-                            RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(8.0),
-                              side: BorderSide(
-                                color: Colors.black,
-                                width: 1.0,
+                          style: ButtonStyle(
+                            backgroundColor:
+                                MaterialStateProperty.all(Colors.white),
+                            shape: MaterialStateProperty.all<
+                                RoundedRectangleBorder>(
+                              RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8.0),
+                                side: BorderSide(
+                                  color: Colors.black,
+                                  width: 1.0,
+                                ),
                               ),
                             ),
                           ),
-                        ),
-                        child: Text(
-                          'Self help books',
-                          style: GoogleFonts.comfortaa(
-                              color: Colors.black,
-                              fontSize: 20,
-                              fontWeight: FontWeight.w600,
-                              letterSpacing: 0
-                              // fontStyle: FontStyle.italic,
+                          child: Text(
+                            'Self help books',
+                            style: GoogleFonts.comfortaa(
+                                color: Colors.black,
+                                fontSize: 20,
+                                fontWeight: FontWeight.w600,
+                                letterSpacing: 0
+                                // fontStyle: FontStyle.italic,
 
-                              ),
-                        ),
-                        onPressed: () {},
-                      ),
+                                ),
+                          ),
+                          onPressed: _launchURL),
                     ),
                   ],
                 ),
