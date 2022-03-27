@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:imposterbubble/quiz/screens/home_screen.dart';
+import 'package:imposterbubble/screens/affirmations.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -26,7 +27,7 @@ class _HomeState extends State<Home> {
             ),
           ),
           child: Padding(
-            padding: const EdgeInsets.all(28.0),
+            padding: const EdgeInsets.all(18.0),
             child: Column(
               children: [
                 Row(
@@ -50,7 +51,7 @@ class _HomeState extends State<Home> {
                   ],
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(12.0),
+                  padding: const EdgeInsets.fromLTRB(15, 30, 15, 10),
                   child: Row(
                     children: [
                       Container(
@@ -103,7 +104,7 @@ class _HomeState extends State<Home> {
                     ),
                     Container(
                       height: 50,
-                      width: 170,
+                      width: 190,
                       child: ElevatedButton(
                         style: ButtonStyle(
                           backgroundColor:
@@ -130,7 +131,12 @@ class _HomeState extends State<Home> {
 
                               ),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Affirmations()));
+                        },
                       ),
                     ),
                   ],
@@ -186,24 +192,4 @@ class _HomeState extends State<Home> {
       ),
     );
   }
-
-  // Container glassmorphismWindow(Size size) {
-  //   return Container(
-  //     width: size.width * 0.9,
-  //     height: size.height * 0.9,
-  //     decoration: BoxDecoration(
-  //       color: Colors.white.withOpacity(0.6),
-  //       borderRadius: BorderRadius.circular(20),
-  //     ),
-  //     child: Container(
-  //       child: Column(
-  //         mainAxisAlignment: MainAxisAlignment.center,
-  //         children: [
-  //           SizedBox(
-  //             height: 30,
-  //           ),
-  //         ],
-  //       ),
-  //     ),
-  //   );
 }
