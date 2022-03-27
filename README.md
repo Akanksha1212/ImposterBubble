@@ -15,3 +15,6 @@ Imposter Bubble helps people in identifying the type and recommending them books
 <pre>
 <img src="1.jpg" width="250"> <img src="2.jpg" width="250"> <img src="4.jpg" width="250"> <img src="5.jpg" width="250"> <img src="6.jpg" width="250"> 
 </pre>
+
+## Built with
+<img src="https://img.icons8.com/color/48/000000/dart.png"/><img src="https://img.icons8.com/color/48/000000/flutter.png"/><img src="https://img.icons8.com/color/48/000000/firebase.png"/><img src="https://img.icons8.com/color/48/000000/figma--v1.png"/>
